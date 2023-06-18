@@ -8,6 +8,8 @@
   --Sacramento-State-Green: #012F34; 
   --Dark-Green: #002529;
 }
+
+/* FONTS  */
 @font-face {
   font-family: 'Livvic';
   src: url('../fonts/Livvic-SemiBold.woff2') format('woff2'),
@@ -52,6 +54,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -140,6 +143,86 @@ select:-webkit-autofill:focus {
   flex-grow: 1;
 }
 
+/* Site Header */
+.site-header {
+  padding-top: 73px;
+  padding-bottom: 73px;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+}
+
+.site-header__logo {
+  display: block;
+  margin: 0;
+  margin-right: 80px;
+}
+
+.site-header__logo:hover{
+  opacity: 0.8;
+}
+
+.site-header__logo:active{
+  opacity: 0.6;
+}
+
+.site-header__logo-img {
+  width: 160px;
+  height: 40px;
+}
+
+.site-header__sitenav-list {
+display: flex;
+align-items: center;
+padding: 0;
+margin: 0;
+margin-right: 500px;
+list-style: none;
+}
+
+.site-header__sitenav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.site-header__sitenav-link {
+  color: var(--White);
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.site-header__sitenav-link:hover{
+  color: var(--Light-Coral);
+}
+
+.site-header__sitenav-link:active{
+  opacity: 0.6;
+}
+
+.site-header__btn {
+  margin-left: auto;
+  padding: 10px 32px;
+  color: var(--White);
+  background-color: transparent;
+  border: 2px solid var(--White);
+  border-radius: 24px;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.site-header__btn:hover{
+  color: var(--Dark-Green);
+  background-color: var(--White);
+}
+
+.site-header__btn:active{
+  opacity: 0.6;
+}
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
