@@ -372,6 +372,88 @@ list-style: none;
 .features__info-text {
   margin: 0;
 }
+
+/* STORIES */
+.stories {
+  padding-top: 141px;
+  padding-bottom: 160px;
+  background-image: url('../images/stories-bg-left.svg'), url('../images/stories-bg-right.svg');
+  background-position: calc(50% - 645px) calc(50% - 330px), calc(50% + 622px) calc(50% + 341px);
+  background-repeat: no-repeat, no-repeat;
+}
+
+.stories__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stories__lead-text {
+  width: 932px;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 56px;
+}
+
+.stories__marked {
+  color: var(--Rapture-Blue);
+}
+
+.storeis__list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  list-style: none;
+}
+
+.stories__item{
+  width: 350px;
+  background-image: url('../images/quote.svg');
+  background-repeat: no-repeat;
+  background-position: calc(50%) calc(50% - 127px);
+  padding-top: 36px;
+}
+
+.stories__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.stories__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.stories__author-name {
+  margin-top: 0;
+  margin-bottom: 2px;
+  color: var(--Rapture-Blue);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.stories__author-job {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.stories__author-img {
+  width: 62px;
+  height: 62px;
+  margin: 0;
+  border-radius: 50%;
+  border: 2px solid var(--White);
+}
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
