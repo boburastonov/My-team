@@ -700,8 +700,7 @@ list-style: none;
 
 /* CTA */
 .cta {
-  
-  padding-top: 76px;
+  padding-top: 36px;
   padding-bottom: 76px;
   background-color: var(--Light-Coral);
   background-image: url('../images/cta-bg.svg');
@@ -718,6 +717,7 @@ list-style: none;
 }
 
 .cta__lead-text {
+  margin-right: 250px;
   color: var(--Sacramento-State-Green);
   font-size: 48px;
   line-height: 48px;
@@ -737,6 +737,118 @@ list-style: none;
 
 .cta__contact-btn:active{
   opacity: 0.6;
+}
+
+/* FOOTER */
+.site-footer{
+  padding-top: 48px;
+  padding-bottom: 48px;
+  margin-top: -41px;
+  background-color: var(--Dark-Green);
+}
+
+.site-footer__container {
+  display: flex;
+  align-items: center;
+}
+
+.site-footer__home {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-right: 125px;
+}
+
+.site-footer__logo {
+  display: block;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.site-footer__logo-img {
+  display: block;
+  width: 160px;
+  height: 40px;
+}
+
+.site-footer__sitenav-list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.site-footer__sitenav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.site-footer__sitenav-link {
+  color: var(--White);
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.site-footer__sitenav-link:hover {
+  color: var(--Light-Coral);
+}
+
+.site-footer__sitenav-link:active {
+  opacity: 0.6;
+}
+
+.site-footer__links-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  margin-right: 125px;
+  list-style: none;
+}
+
+.site-footer__links-item {
+  margin: 0;
+  color: rgb(255, 255, 255, .6);
+}
+
+.site-footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto;
+}
+
+.site-footer__socials-list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+  list-style: none;
+}
+
+.site-footer__socials-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.site-footer__socials-link {
+  color: var(--White);
+}
+
+.site-footer__socials-link:hover{
+  color: var(--Light-Coral);
+}
+
+.site-footer__socials-link:active{
+  opacity: 0.6;
+}
+
+.site-footer__privacy-text {
+  margin: 0;
+  color: rgb(255, 255, 255, .6);
 }
 
 @media
