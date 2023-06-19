@@ -488,10 +488,10 @@ list-style: none;
 /* MEMBERS */
 .members {
   padding-top: 140px;
-  padding-bottom: 85px;
+  padding-bottom: 93px;
   background-color: var(--Deep-Jungle-Green);
   background-image:url('../images/members-left-bg.svg'), url('../images/stories-bg-left.svg');
-  background-position: calc(50% - 720px) calc(50% - 425px), calc(50% + 676px) calc(50% + 454px);
+  background-position: calc(50% - 720px) calc(50% - 425px), calc(50% + 648px) calc(50% + 452px);
   background-repeat: no-repeat, no-repeat;
 }
 
@@ -665,7 +665,7 @@ list-style: none;
     background-color: var(--Sacramento-State-Green);
     background-image: url('../images/clients-bg.svg');
     background-repeat: no-repeat;
-    background-position: ;
+    background-position: calc(50% - 620px) calc(50% - 121.6px);
 }
   
 .clients__container {
