@@ -138,6 +138,18 @@ select:-webkit-autofill:focus {
   margin-right: auto;
 }
 
+.btn{
+    padding: 10px 32px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 24px;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 18px;
+    line-height: 28px;
+    white-space: nowrap;
+}
+
 
 /* MAIN-CONTENT */
 .main-content {
@@ -206,16 +218,8 @@ list-style: none;
 
 .site-header__btn {
   margin-left: auto;
-  padding: 10px 32px;
   color: var(--White);
-  background-color: transparent;
-  border: 2px solid var(--White);
-  border-radius: 24px;
-  text-decoration: none;
-  text-transform: lowercase;
-  font-size: 18px;
-  line-height: 28px;
-  white-space: nowrap;
+  border-color: var(--White);
 }
 
 .site-header__btn:hover{
@@ -524,7 +528,7 @@ list-style: none;
   position: relative;
   padding: 32px 24px 56px;
   background-color: var(--Sacramento-State-Green);
-  margin-bottom: 76px;
+  margin-bottom: 67px;
 }
 
 .members__item{
@@ -661,7 +665,7 @@ list-style: none;
 /* CLIENTS */
 .clients{
     padding-top: 140px;
-    padding-bottom: 140px;
+    padding-bottom: 135px;
     background-color: var(--Sacramento-State-Green);
     background-image: url('../images/clients-bg.svg');
     background-repeat: no-repeat;
@@ -693,8 +697,47 @@ list-style: none;
 .clients__name:not(:last-child) {
   margin-right: 80px;
 }
+
+/* CTA */
+.cta {
   
-.clients__img {}
+  padding-top: 76px;
+  padding-bottom: 76px;
+  background-color: var(--Light-Coral);
+  background-image: url('../images/cta-bg.svg');
+  background-repeat: no-repeat;
+  background-position: calc(50% - 575px) 56px;
+}
+
+.cta__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 103px;
+}
+
+.cta__lead-text {
+  color: var(--Sacramento-State-Green);
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.cta__contact-btn {
+  color: var(--Sacramento-State-Green);
+  border-color: var(--Sacramento-State-Green);
+}
+
+.cta__contact-btn:hover{
+  color: var(--White);
+  background-color: var(--Sacramento-State-Green);
+}
+
+.cta__contact-btn:active{
+  opacity: 0.6;
+}
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
