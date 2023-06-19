@@ -170,6 +170,7 @@ select:-webkit-autofill:focus {
 }
 
 .site-header__logo-img {
+  display: block;
   width: 160px;
   height: 40px;
 }
@@ -245,14 +246,13 @@ list-style: none;
 }
 
 .hero__title {
-  width: 635px;
   color: var(--White);
   font-size: 100px;
   line-height: 100px;
   font-weight: 700;
-  flex-shrink: 0;
   margin: 0;
   margin-right: 30px;
+  white-space: nowrap;
 }
 
 .hero__marked{
@@ -275,11 +275,22 @@ list-style: none;
   background-color: var(--Rapture-Blue);
 }
 
+.hero__info-divider{
+  background-color: var(--Light-Coral);
+}
+
 .hero__text {
   font-size: 18px;
   line-height: 28px;
   margin: 0;
   margin-top: 79px;
+}
+
+.info-text{
+  width: 730px;
+  flex-shrink: 0;
+  margin: 0;
+  margin-top: 40px;
 }
 
 /* FEATURES */
@@ -402,7 +413,7 @@ list-style: none;
   color: var(--Rapture-Blue);
 }
 
-.storeis__list {
+.stories__list {
   display: flex;
   align-items: center;
   padding: 0;
@@ -453,6 +464,25 @@ list-style: none;
   margin: 0;
   border-radius: 50%;
   border: 2px solid var(--White);
+}
+
+.about{
+  display: flex;
+  align-items: center;
+  background-image: url('../images/hero-about-bg.svg');
+  background-repeat: no-repeat;
+  background-position: calc(50% + 720px) calc(50% + 58px);
+}
+
+.about__container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 120px;
+}
+
+.about__title{
+  font-size: 64px;
 }
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
