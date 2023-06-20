@@ -940,10 +940,24 @@ input{
   width: 100%;
   padding-bottom: 16px;
   margin-bottom: 24px;
+  color: var(--White);
   background-color: transparent;
   border: 0;
   border-bottom: 1px solid var(--White);
   outline: none;
+  letter-spacing: -0.12px;
+}
+
+input:hover::placeholder{
+  color: rgb(246, 126, 126, .6);
+}
+
+input:hover{
+  border-bottom-color: var(--Light-Coral);
+}
+
+input:active{
+  opacity: 0.6;
 }
 
 input::placeholder{
@@ -957,14 +971,28 @@ textarea{
   background-color: transparent;
   border: 0;
   border-bottom: 1px solid var(--White);
+  color: var(--White);
   letter-spacing: -0.12px;
   outline: none;
   resize: vertical;
   scroll-behavior: smooth;
 }
 
+textarea:hover::placeholder {
+  color: rgb(246, 126, 126, .6);
+}
+
+textarea:hover {
+  border-bottom-color: var(--Light-Coral);
+}
+
+textarea:active {
+  opacity: 0.6;
+}
+
 textarea::placeholder{
   color: rgb(255, 255, 255, .6);
+  letter-spacing: -0.12px;
 }
 
 .submit-btn {
@@ -974,6 +1002,14 @@ textarea::placeholder{
   background-color: var(--White);
   display: inline-flex;
   margin-right: auto;
+}
+
+.submit-btn:hover{
+  opacity: 0.8;
+}
+
+.submit-btn:active{
+  opacity: 0.6;
 }
 
 textarea::-webkit-scrollbar {
