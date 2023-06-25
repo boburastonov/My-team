@@ -149,6 +149,7 @@ select:-webkit-autofill:focus {
     line-height: 28px;
     white-space: nowrap;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 
