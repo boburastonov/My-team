@@ -173,6 +173,7 @@ select:-webkit-autofill:focus {
   display: block;
   margin: 0;
   margin-right: 80px;
+  flex-shrink: 0;
 }
 
 .site-header__logo:hover{
